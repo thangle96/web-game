@@ -16,7 +16,7 @@ if (isset($_SESSION['useradmin']) == false) {
 		if ($permission == '0') {
 			// Nếu không phải admin thì xuất thông báo
 			echo "Bạn không đủ quyền truy cập vào trang này<br>";
-			echo "<a href='http://localhost:81/NguyenThanhSang_2117110323/index.php?option=home'> Click để về lại trang chủ</a>";
+			echo "<a href='../index.php'> Click để về lại trang chủ</a>";
 			exit();
 		}
 	}
