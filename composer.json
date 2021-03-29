@@ -1,0 +1,13 @@
+{
+    "name": "GIAODIEN/Laptrinhphp",
+    "description": "Lap trinh web 2021.",
+    "type": "project",
+    "license": "LTW",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {}
+}
