@@ -30,9 +30,41 @@ class Users extends Database
   }
 
   public function user_detail($id)
-    {
-        $sql = "SELECT * FROM $this->table WHERE id = $id";
-        return $this->getList($sql);
+  {
+    $sql = "SELECT * FROM $this->table WHERE id = $id";
+    return $this->getRow($sql);
+  }
+  public function user_update($date, $id)
+  {
+    $strset = '';
+    foreach ($date as $f => $v) {
+      $strset .= $f . "='$v', ";
     }
-  
+    $strset = rtrim($strset);
+    $strset = rtrim($strset, ',');
+    $sql = "UPDATE $this->table SET $strset WHERE id = '$id'";
+    $this->setQuery($sql);
+  }
+
+  public function card_update_dev($id)
+  {
+    $sql = "UPDATE  $this->table SET access = 2, money = (money - 500000) WHERE id = '" . $id . "'";
+    $this->setQuery($sql);
+  }
+
+  public function user_insert($data)
+  {
+    $strf = "";
+    $strv = "";
+    foreach ($data as $f => $v) {
+      $strf .= $f . ", ";
+      $strv .= "'" . $v . "', ";
+    }
+    $strf = rtrim($strf);
+    $strf = rtrim($strf, ',');
+    $strv = rtrim($strv);
+    $strv = rtrim($strv, ',');
+    $sql = "INSERT INTO $this->table($strf) VALUES ($strv)";
+    $this->setQuery($sql);
+  }
 }

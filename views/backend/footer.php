@@ -6,7 +6,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.0.4
     </div>
-    <strong>Copyright & Nguyễn Thanh Sang ; 2020-2021 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
+    <strong>Copyright ; 2020-2021 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
     reserved.
   </footer>
 

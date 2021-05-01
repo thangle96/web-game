@@ -38,7 +38,7 @@ $list = $product->product_admin_trash();
                 <?php foreach($list as $row) : ?>
                     <tr>
                         <th>
-                            <img src="../public/images/product/<?php echo $row['img']; ?>" class="img-fluid" style="width:100px; height:100px;">
+                            <img src="../public/images/<?php echo $row['img']; ?>" class="img-fluid" style="width:100px; height:100px;">
                         </th>
                         <td><?php echo $row['name']; ?></td>
                         <td><?php echo $row['catname']; ?></td>

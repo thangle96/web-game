@@ -43,13 +43,11 @@ $pros = $product->product_similiar($id);
 
                             <div class="addtocart-bar">
                                 <?php if ($pro['price'] == 0): ?>
-                                    <form action="#">
+                                    <form action="../public/file/<?php echo$pro['slug'];?>">
                                         <input type="submit" value="Download">
                                     </form>
                                 <?php else: ?>
-                                    <form action="#">
-                                        <input type="submit" value="Buy">
-                                    </form>
+                                    <a href="index.php?option=product-buy&id=<?php echo $pro['id']; ?>" class="button">Buy</a>
                                 <?php endif; ?>
 
                                 <div class="social-links square">

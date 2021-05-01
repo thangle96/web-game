@@ -16,9 +16,9 @@ class Customers extends Database
   public function user_row($username)
   {
     if (filter_var($username, FILTER_VALIDATE_EMAIL)) {
-      $sql = "SELECT * FROM $this->table WHERE email = '$username' AND status = '1' AND access = '0'";
+      $sql = "SELECT * FROM $this->table WHERE email = '$username' AND status = '1'";
     } else {
-      $sql = "SELECT * FROM $this->table WHERE username = '$username' AND status = '1' AND access = '0'";
+      $sql = "SELECT * FROM $this->table WHERE username = '$username' AND status = '1' ";
     }
     return $this->getRow($sql);
   }

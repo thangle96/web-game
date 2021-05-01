@@ -12,7 +12,7 @@
     <link href="../public/fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="../public/fonts/lineo-icon/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Loading main css file -->
     <link rel="stylesheet" href="../public/style.css">
 

@@ -10,7 +10,8 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../public/admin/public/css/all.min.css">
   <link rel="stylesheet" href="../public/admin/public/css/datatables.min.css">
-  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- overlayScrollbars -->
@@ -109,39 +110,10 @@
               </li>            
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy" style="width:20px;"></i>
-                  <p >
-                Bài viết
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview " >
-              <li class="nav-item">
-                <a href="index.php?option=post" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Danh sách bài viết</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="index.php?option=topic" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Chủ đề bài viết</p>
-                </a>
-              </li>       
-              <li class="nav-item">
-                <a href="index.php?option=page" class="nav-link">
-                <i class="nav-icon far fa-circle text-danger"></i>
-                  <p>Trang đơn</p>
-                </a>
-              </li>             
-            </ul>
-          </li>
           <li class="nav-item">
-            <a href="index.php?option=order" class="nav-link">
+            <a href="index.php?option=card" class="nav-link">
               <i class="nav-icon far fa-circle text-info"></i>
-              <p>Đơn hàng</p>
+              <p>Thẻ cào</p>
             </a>
           </li>
           <li class="nav-item">

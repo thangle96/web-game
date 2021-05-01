@@ -12,7 +12,7 @@ $user = new Customers();
 ?>
 <!doctype html>
 <html lang="en">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <head>
     <title>Đăng nhập</title>
     <!-- Required meta tags -->
@@ -74,6 +74,7 @@ if(isset($_POST['DANGNHAP']))
             } ?></div>
             <div class="form-group text-right">
                 <button type="submit" class="btn btn-success text-right" name="DANGNHAP">Đăng nhập </button>
+                <a class="btn btn-info" href="index.php?option=customer-register">đăng ký</a>
             </div>
             
         </div>

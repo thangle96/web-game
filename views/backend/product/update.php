@@ -55,6 +55,11 @@ foreach($listCategory as $rowcat){
                         <label style="font-weight:bold;">Từ khóa(SEO)</label>
                         <textarea name="metakey" class="form-control" placeholder="Từ khóa,  khóa từ, từ từ" required><?php echo $row['metakey'] ?></textarea>
                     </div>
+                    <div class="form-group">
+                            <label style="font-weight: bold;">File</label>
+                            <label ><?php echo $row['slug'];?></label>
+                            <input type="file" name="fileUpload" class="form-control" value="<?php echo $row['slug'] ?>">
+                        </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
@@ -78,7 +83,7 @@ foreach($listCategory as $rowcat){
                     </div>
                     <div class="form-group">
                     <label style="font-weight: bold;">Ảnh sản phẩm</label>
-                        <img width="340" height="300" src="../public/images/product/<?php echo $row['img'] ?>" alt="">
+                        <img width="340" height="300" src="../public/images/<?php echo $row['img'] ?>" alt="">
                         <input name="img" type="file" class="form-control"/>
                     </div>
                     

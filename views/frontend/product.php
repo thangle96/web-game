@@ -1,7 +1,11 @@
 <?php
 
 use App\Models\Product;
+use App\Models\Users;
+$user = new Users();
 
+$id = $_SESSION['userid'];
+$userde = $user->user_detail($id);
 $product = new Product();
 
 $parentid_array = array();
@@ -41,9 +45,9 @@ $list_product = $product->product_home($parentid_array);
                             <small class="price">$<?php echo $pro['price']?></small>
                             <p><?php echo substr($pro['detail'], 0, 20) ?>...</p>
                             <?php if ($pro['price'] == 0) : ?>
-                                <a href="cart.html" class="button">Download</a>
+                                <a href="../public/file/<?php echo$pro['slug'];?>" class="button">Download</a>
                             <?php else: ?>
-                                <a href="cart.html" class="button">Buy</a>
+                                <a href="index.php?option=product-buy&id=<?php echo $pro['id']; ?>" class="button">Buy</a>
                             <?php endif; ?>
                             <a href="index.php?option=product&id=<?php echo $pro['id']; ?>" class="button muted">Read Details</a>
                         </div>
